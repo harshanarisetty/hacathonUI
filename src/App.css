@@ -1,38 +1,171 @@
+/** @format */
+
 .App {
   text-align: center;
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+.inputBox {
+  margin: 20px;
+  width: 200px;
+  padding: 10px;
+  border-radius: 10px;
+  border: 1px solid gray;
+}
+.inputBox2 {
+  position: absolute;
+  top: 0;
+  z-index: 50;
+  margin: 8px;
+  left: 560px;
+  width: 470px;
+  padding: 10px;
+  border-radius: 30px;
+  padding-left: 30px;
+  border: 1px solid gray;
+  background-color: rgb(243, 239, 239);
+  font-size: 20px;
+  margin-bottom: 0 !important;
 }
 
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
+.inputBox2:focus {
+  background-color: white;
+  border: none !important;
 }
 
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
+.recomendationList {
+  position: absolute;
+  left: 567px;
+  z-index: 40;
+  display: flex;
+  width: 510px;
+  flex-direction: column;
+  justify-content: center;
+  background-color: white;
+  /* background: black; */
+  margin: auto;
+  border: 2px solid rgb(46, 115, 211);
+  margin-top: -69px;
+  border-radius: 30px;
+  padding-top: 45px;
+  /* padding: 0px 0px; */
+}
+.recomendation {
+  padding: 10px 40px;
+  text-align: left;
+  font-size: 15px;
+  justify-content: start;
+}
+
+.recomendation:last-child {
+  border-bottom-left-radius: 30px;
+  border-bottom-right-radius: 30px;
+}
+
+.recomendation:hover {
+  background-color: rgb(233, 229, 229);
+  cursor: pointer;
+}
+
+.inputBox:active {
+  border: 1px solid lightblue;
+}
+
+.inputContainer {
+  margin-top: 10%;
   display: flex;
   flex-direction: column;
-  align-items: center;
   justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
+  align-items: center;
 }
 
-.App-link {
-  color: #61dafb;
+.actionButton {
+  padding: 5px 10px;
+  border-radius: 5px;
+  background-color: white;
+  cursor: pointer;
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+.actionButton:hover {
+  border-color: lightblue;
+  transform: scale(1.1);
+  transition: 0.2s;
+}
+
+.result {
+  display: flex;
+  margin-top: 10%;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.searchComp {
+  background-image: url(./Screenshot\ 2023-08-16\ at\ 11.57.30\ AM.png);
+  /* background-position: center; */
+  /* background-size: auto; */
+  background-size: contain;
+  background-repeat: no-repeat;
+  width: 100vw;
+  height: 100vh;
+}
+
+.dropdownInputs {
+  display: flex;
+  flex-direction: row;
+  flex-flow: wrap;
+  margin-left: 10%;
+  margin-right: 10%;
+  justify-content: space-between;
+}
+
+.select-search-input {
+  background-color: white !important;
+}
+
+.select-search-row.button {
+  background-color: white !important;
+}
+
+/* .searchBox {
+  width: 200px;
+} */
+
+.datePicker {
+  padding: 10px;
+  border: 1px solid lightgray;
+  border-radius: 5px;
+  width: 300px;
+  font-size: 20px;
+}
+
+.dateBox {
+  position: absolute;
+  top: 265px;
+
+  left: 1060px;
+}
+
+.workerDrop {
+  font-weight: bold;
+  position: absolute;
+  top: 265px;
+  left: 575px;
+  width: 200px;
+}
+
+.timeBox {
+  position: absolute;
+  width: 120px;
+  top: 225px;
+  left: 305px;
+}
+.helpText {
+  margin-top: 10px;
+  margin-bottom: 10px;
+  text-align: start;
+  margin-left: 20px;
+  font-style: italic;
+  font-size: 13px;
+  /* font-weight: bold; */
+  color: gray;
 }

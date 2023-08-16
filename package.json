@@ -6,9 +6,15 @@
     "@testing-library/jest-dom": "^5.17.0",
     "@testing-library/react": "^13.4.0",
     "@testing-library/user-event": "^13.5.0",
+    "file-loader": "^6.2.0",
+    "http-proxy-middleware": "^2.0.6",
+    "papaparse": "^5.4.1",
     "react": "^18.2.0",
+    "react-datepicker": "^4.16.0",
     "react-dom": "^18.2.0",
     "react-scripts": "5.0.1",
+    "react-select": "^5.7.4",
+    "react-select-search": "^4.1.6",
     "web-vitals": "^2.1.4"
   },
   "scripts": {
@@ -29,6 +35,7 @@
       "not dead",
       "not op_mini all"
     ],
+    "proxy": "http://127.0.0.1:5000",
     "development": [
       "last 1 chrome version",
       "last 1 firefox version",
